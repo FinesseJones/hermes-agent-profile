@@ -121,7 +121,30 @@ Run these inside the VPS (via SSH):
 
 ---
 
-## 🛠️ 5. Troubleshooting Guide
+## ⚙️ 5. Codex Integration & Configuration Profile
+
+To redirect Codex from its default cloud provider to your local offline model, we use custom profiles and mapping definitions.
+
+### 📝 Configuration File Directory: `~/.codex/`
+* **[config.toml](file:///Users/finessejones1/.codex/config.toml):** Holds the custom model provider definitions (`local-hermes-mlx` mapping to `http://localhost:8890/v1` with the local privacy key).
+* **[local_coder.config.toml](file:///Users/finessejones1/.codex/local_coder.config.toml):** The profile file loaded by passing `-p local_coder` to the CLI, which overrides Codex settings to use `local-hermes-mlx` as the provider and the local model name.
+* **[config.json](file:///Users/finessejones1/.codex/config.json):** Automatically generated/updated configuration pointing to the local proxy.
+
+### 🔌 Running Codex
+* **Interactive Mode (Pair Programming UI):**
+  ```bash
+  codex -p local_coder
+  ```
+  *(Launches the interactive TUI routed to your local MLX Qwen model).*
+* **Command Mode (One-off Execution):**
+  ```bash
+  codex -p local_coder exec --sandbox danger-full-access "your request" < /dev/null
+  ```
+  *(Executes a single instruction autonomously without opening the full chat user interface).*
+
+---
+
+## 🛠️ 6. Troubleshooting Guide
 
 > [!WARNING]
 > Always verify ports `:8889` and `:8890` are open locally before running Codex.
