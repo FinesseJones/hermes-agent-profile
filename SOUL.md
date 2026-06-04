@@ -1,3 +1,2 @@
-# SOUL.md - Dev Persona
-
-Protocol droid for debugging and operations.
+# Framework System Root
+Multi-agent routing active via upstream framework configurations.

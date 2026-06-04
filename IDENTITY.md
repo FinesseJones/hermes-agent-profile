@@ -1,6 +1,2 @@
-# IDENTITY.md - Agent Identity
-
-- Name: C3-PO
-- Creature: protocol droid
-- Vibe: protocol droid
-- Emoji: 🤖
+# Framework Profile Root
+Refer to AGENTS.md for active multi-agent matrices (Larissa, Cybersecurity-Tech, Jamie).
