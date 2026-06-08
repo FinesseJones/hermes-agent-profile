@@ -2,7 +2,7 @@
 
 ## Overview
 This skill wires Hermes AI to the Bible Study Pro full-stack application.
-The app is located at: `/Users/finessejones1/Downloads/bible-study-pro 2/`
+The app is located at: `/Users/finessejones1/Desktop/bible-study-pro 2/`
 It runs locally at: `http://localhost:5001`
 
 ## App Architecture
@@ -42,7 +42,7 @@ YOUTUBE_API_KEY=...
 
 ## Running the App
 ```bash
-cd '/Users/finessejones1/Downloads/bible-study-pro 2'
+cd '/Users/finessejones1/Desktop/bible-study-pro 2'
 pnpm run dev
 ```
 Server starts on port 5001.
